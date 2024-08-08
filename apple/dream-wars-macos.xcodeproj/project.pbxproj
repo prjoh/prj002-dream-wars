@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F181E772986B5B600EAB488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F181E762986B5B600EAB488 /* Assets.xcassets */; };
+		8F1820412986C34300EAB488 /* component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F18200B2986C34100EAB488 /* component.cpp */; };
+		8F1820422986C34300EAB488 /* material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F18200C2986C34100EAB488 /* material.cpp */; };
+		8F1820432986C34300EAB488 /* system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F18200E2986C34100EAB488 /* system.cpp */; };
+		8F1820442986C34300EAB488 /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F1820122986C34100EAB488 /* texture.cpp */; };
+		8F1820452986C34300EAB488 /* entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F1820172986C34100EAB488 /* entity.cpp */; };
+		8F1820462986C34300EAB488 /* perlin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F1820182986C34100EAB488 /* perlin.cpp */; };
+		8F1820472986C34300EAB488 /* audio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F18201A2986C34100EAB488 /* audio.cpp */; };
+		8F1820482986C34300EAB488 /* load.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F18201B2986C34100EAB488 /* load.cpp */; };
+		8F1820492986C34300EAB488 /* coroutine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F18201C2986C34100EAB488 /* coroutine.cpp */; };
+		8F18204A2986C34300EAB488 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F18201E2986C34100EAB488 /* util.cpp */; };
+		8F18204B2986C34300EAB488 /* gui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F18201F2986C34100EAB488 /* gui.cpp */; };
+		8F18204C2986C34300EAB488 /* collision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F1820202986C34100EAB488 /* collision.cpp */; };
+		8F18204D2986C34300EAB488 /* line.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F1820222986C34100EAB488 /* line.cpp */; };
+		8F18204E2986C34300EAB488 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F1820252986C34200EAB488 /* main.cpp */; };
+		8F18204F2986C34300EAB488 /* transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F1820262986C34200EAB488 /* transform.cpp */; };
+		8F1820502986C34300EAB488 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F1820272986C34200EAB488 /* game.cpp */; };
+		8F1820512986C34300EAB488 /* mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F1820282986C34200EAB488 /* mesh.cpp */; };
+		8F1820522986C34300EAB488 /* particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F18202B2986C34200EAB488 /* particle.cpp */; };
+		8F1820532986C34300EAB488 /* camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F18202C2986C34200EAB488 /* camera.cpp */; };
+		8F1820542986C34300EAB488 /* game_state.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F18202F2986C34200EAB488 /* game_state.cpp */; };
+		8F1820552986C34300EAB488 /* screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F1820302986C34200EAB488 /* screen.cpp */; };
+		8F1820562986C34300EAB488 /* text.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F1820312986C34200EAB488 /* text.cpp */; };
+		8F1820572986C34300EAB488 /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F1820322986C34200EAB488 /* common.cpp */; };
+		8F1820582986C34300EAB488 /* res in Resources */ = {isa = PBXBuildFile; fileRef = 8F1820372986C34200EAB488 /* res */; };
+		8F18205A2986C34300EAB488 /* random.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F18203E2986C34300EAB488 /* random.cpp */; };
+		8F18205B2986C34300EAB488 /* terrain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F1820402986C34300EAB488 /* terrain.cpp */; };
+		8F1C6CBB2A25B5E1006522CD /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1C6CB72A25B5E0006522CD /* SDL2_mixer.framework */; };
+		8F1C6CBC2A25B5E1006522CD /* SDL2_mixer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1C6CB72A25B5E0006522CD /* SDL2_mixer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8F1C6CBD2A25B5E1006522CD /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1C6CB82A25B5E0006522CD /* SDL2.framework */; };
+		8F1C6CBE2A25B5E1006522CD /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1C6CB82A25B5E0006522CD /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8F1C6CBF2A25B5E1006522CD /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1C6CB92A25B5E0006522CD /* SDL2_image.framework */; };
+		8F1C6CC02A25B5E1006522CD /* SDL2_image.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1C6CB92A25B5E0006522CD /* SDL2_image.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8F1C6CC12A25B5E1006522CD /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1C6CBA2A25B5E1006522CD /* SDL2_ttf.framework */; };
+		8F1C6CC22A25B5E1006522CD /* SDL2_ttf.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1C6CBA2A25B5E1006522CD /* SDL2_ttf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8F6FA3AB2986D106005C7319 /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F6FA3A32986D106005C7319 /* imgui.cpp */; };
+		8F6FA3AC2986D106005C7319 /* imgui_widgets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F6FA3A42986D106005C7319 /* imgui_widgets.cpp */; };
+		8F6FA3AD2986D106005C7319 /* imgui_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F6FA3A52986D106005C7319 /* imgui_demo.cpp */; };
+		8F6FA3AE2986D106005C7319 /* imgui_impl_sdl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F6FA3A62986D106005C7319 /* imgui_impl_sdl.cpp */; };
+		8F6FA3AF2986D106005C7319 /* imgui_impl_opengl3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F6FA3A72986D106005C7319 /* imgui_impl_opengl3.cpp */; };
+		8F6FA3B02986D106005C7319 /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F6FA3A82986D106005C7319 /* imgui_draw.cpp */; };
+		8F6FA3B12986D106005C7319 /* imgui_tables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F6FA3A92986D106005C7319 /* imgui_tables.cpp */; };
+		8F6FA3B22986D106005C7319 /* imgui_impl_sdlrenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F6FA3AA2986D106005C7319 /* imgui_impl_sdlrenderer.cpp */; };
+		8F6FA3B42986D13B005C7319 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 8F6FA3B32986D13B005C7319 /* glad.c */; };
+		8F6FA3C22986D2BA005C7319 /* libassimp.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6FA3BC2986D2B9005C7319 /* libassimp.5.dylib */; };
+		8F6FA3C32986D2BA005C7319 /* libassimp.5.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6FA3BC2986D2B9005C7319 /* libassimp.5.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8F6FA3C42986D2BA005C7319 /* libfreetype.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6FA3BD2986D2B9005C7319 /* libfreetype.6.dylib */; };
+		8F6FA3C52986D2BA005C7319 /* libfreetype.6.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6FA3BD2986D2B9005C7319 /* libfreetype.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8F1820682986C59E00EAB488 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8F1C6CBC2A25B5E1006522CD /* SDL2_mixer.framework in Embed Frameworks */,
+				8F6FA3C52986D2BA005C7319 /* libfreetype.6.dylib in Embed Frameworks */,
+				8F6FA3C32986D2BA005C7319 /* libassimp.5.dylib in Embed Frameworks */,
+				8F1C6CBE2A25B5E1006522CD /* SDL2.framework in Embed Frameworks */,
+				8F1C6CC22A25B5E1006522CD /* SDL2_ttf.framework in Embed Frameworks */,
+				8F1C6CC02A25B5E1006522CD /* SDL2_image.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8F181E6D2986B5B500EAB488 /* dream-wars-macos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dream-wars-macos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F181E762986B5B600EAB488 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F181E7D2986B5B600EAB488 /* dream_wars_macos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = dream_wars_macos.entitlements; sourceTree = "<group>"; };
+		8F1820082986C34100EAB488 /* text.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = text.h; path = ../../../CLionProjects/chatgpt_3d_game/text.h; sourceTree = "<group>"; };
+		8F1820092986C34100EAB488 /* ai.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ai.h; path = ../../../CLionProjects/chatgpt_3d_game/ai.h; sourceTree = "<group>"; };
+		8F18200A2986C34100EAB488 /* terrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = terrain.h; path = ../../../CLionProjects/chatgpt_3d_game/terrain.h; sourceTree = "<group>"; };
+		8F18200B2986C34100EAB488 /* component.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = component.cpp; path = ../../../CLionProjects/chatgpt_3d_game/component.cpp; sourceTree = "<group>"; };
+		8F18200C2986C34100EAB488 /* material.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = material.cpp; path = ../../../CLionProjects/chatgpt_3d_game/material.cpp; sourceTree = "<group>"; };
+		8F18200D2986C34100EAB488 /* screen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = screen.h; path = ../../../CLionProjects/chatgpt_3d_game/screen.h; sourceTree = "<group>"; };
+		8F18200E2986C34100EAB488 /* system.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = system.cpp; path = ../../../CLionProjects/chatgpt_3d_game/system.cpp; sourceTree = "<group>"; };
+		8F18200F2986C34100EAB488 /* player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = player.h; path = ../../../CLionProjects/chatgpt_3d_game/player.h; sourceTree = "<group>"; };
+		8F1820102986C34100EAB488 /* mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mesh.h; path = ../../../CLionProjects/chatgpt_3d_game/mesh.h; sourceTree = "<group>"; };
+		8F1820112986C34100EAB488 /* particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = particle.h; path = ../../../CLionProjects/chatgpt_3d_game/particle.h; sourceTree = "<group>"; };
+		8F1820122986C34100EAB488 /* texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = texture.cpp; path = ../../../CLionProjects/chatgpt_3d_game/texture.cpp; sourceTree = "<group>"; };
+		8F1820132986C34100EAB488 /* camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = camera.h; path = ../../../CLionProjects/chatgpt_3d_game/camera.h; sourceTree = "<group>"; };
+		8F1820142986C34100EAB488 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = common.h; path = ../../../CLionProjects/chatgpt_3d_game/common.h; sourceTree = "<group>"; };
+		8F1820152986C34100EAB488 /* health.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = health.h; path = ../../../CLionProjects/chatgpt_3d_game/health.h; sourceTree = "<group>"; };
+		8F1820162986C34100EAB488 /* game_state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game_state.h; path = ../../../CLionProjects/chatgpt_3d_game/game_state.h; sourceTree = "<group>"; };
+		8F1820172986C34100EAB488 /* entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = entity.cpp; path = ../../../CLionProjects/chatgpt_3d_game/entity.cpp; sourceTree = "<group>"; };
+		8F1820182986C34100EAB488 /* perlin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = perlin.cpp; path = ../../../CLionProjects/chatgpt_3d_game/perlin.cpp; sourceTree = "<group>"; };
+		8F1820192986C34100EAB488 /* easing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = easing.h; path = ../../../CLionProjects/chatgpt_3d_game/easing.h; sourceTree = "<group>"; };
+		8F18201A2986C34100EAB488 /* audio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = audio.cpp; path = ../../../CLionProjects/chatgpt_3d_game/audio.cpp; sourceTree = "<group>"; };
+		8F18201B2986C34100EAB488 /* load.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = load.cpp; path = ../../../CLionProjects/chatgpt_3d_game/load.cpp; sourceTree = "<group>"; };
+		8F18201C2986C34100EAB488 /* coroutine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = coroutine.cpp; path = ../../../CLionProjects/chatgpt_3d_game/coroutine.cpp; sourceTree = "<group>"; };
+		8F18201D2986C34100EAB488 /* random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = random.h; path = ../../../CLionProjects/chatgpt_3d_game/random.h; sourceTree = "<group>"; };
+		8F18201E2986C34100EAB488 /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = util.cpp; path = ../../../CLionProjects/chatgpt_3d_game/util.cpp; sourceTree = "<group>"; };
+		8F18201F2986C34100EAB488 /* gui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gui.cpp; path = ../../../CLionProjects/chatgpt_3d_game/gui.cpp; sourceTree = "<group>"; };
+		8F1820202986C34100EAB488 /* collision.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = collision.cpp; path = ../../../CLionProjects/chatgpt_3d_game/collision.cpp; sourceTree = "<group>"; };
+		8F1820212986C34100EAB488 /* audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = audio.h; path = ../../../CLionProjects/chatgpt_3d_game/audio.h; sourceTree = "<group>"; };
+		8F1820222986C34100EAB488 /* line.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = line.cpp; path = ../../../CLionProjects/chatgpt_3d_game/line.cpp; sourceTree = "<group>"; };
+		8F1820232986C34100EAB488 /* game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game.h; path = ../../../CLionProjects/chatgpt_3d_game/game.h; sourceTree = "<group>"; };
+		8F1820242986C34200EAB488 /* system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = system.h; path = ../../../CLionProjects/chatgpt_3d_game/system.h; sourceTree = "<group>"; };
+		8F1820252986C34200EAB488 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../../CLionProjects/chatgpt_3d_game/main.cpp; sourceTree = "<group>"; };
+		8F1820262986C34200EAB488 /* transform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = transform.cpp; path = ../../../CLionProjects/chatgpt_3d_game/transform.cpp; sourceTree = "<group>"; };
+		8F1820272986C34200EAB488 /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game.cpp; path = ../../../CLionProjects/chatgpt_3d_game/game.cpp; sourceTree = "<group>"; };
+		8F1820282986C34200EAB488 /* mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mesh.cpp; path = ../../../CLionProjects/chatgpt_3d_game/mesh.cpp; sourceTree = "<group>"; };
+		8F1820292986C34200EAB488 /* perlin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = perlin.h; path = ../../../CLionProjects/chatgpt_3d_game/perlin.h; sourceTree = "<group>"; };
+		8F18202A2986C34200EAB488 /* material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = material.h; path = ../../../CLionProjects/chatgpt_3d_game/material.h; sourceTree = "<group>"; };
+		8F18202B2986C34200EAB488 /* particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = particle.cpp; path = ../../../CLionProjects/chatgpt_3d_game/particle.cpp; sourceTree = "<group>"; };
+		8F18202C2986C34200EAB488 /* camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = camera.cpp; path = ../../../CLionProjects/chatgpt_3d_game/camera.cpp; sourceTree = "<group>"; };
+		8F18202D2986C34200EAB488 /* component.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = component.h; path = ../../../CLionProjects/chatgpt_3d_game/component.h; sourceTree = "<group>"; };
+		8F18202E2986C34200EAB488 /* load.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = load.h; path = ../../../CLionProjects/chatgpt_3d_game/load.h; sourceTree = "<group>"; };
+		8F18202F2986C34200EAB488 /* game_state.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game_state.cpp; path = ../../../CLionProjects/chatgpt_3d_game/game_state.cpp; sourceTree = "<group>"; };
+		8F1820302986C34200EAB488 /* screen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = screen.cpp; path = ../../../CLionProjects/chatgpt_3d_game/screen.cpp; sourceTree = "<group>"; };
+		8F1820312986C34200EAB488 /* text.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = text.cpp; path = ../../../CLionProjects/chatgpt_3d_game/text.cpp; sourceTree = "<group>"; };
+		8F1820322986C34200EAB488 /* common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = common.cpp; path = ../../../CLionProjects/chatgpt_3d_game/common.cpp; sourceTree = "<group>"; };
+		8F1820332986C34200EAB488 /* coroutine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = coroutine.h; path = ../../../CLionProjects/chatgpt_3d_game/coroutine.h; sourceTree = "<group>"; };
+		8F1820342986C34200EAB488 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = ../../../CLionProjects/chatgpt_3d_game/util.h; sourceTree = "<group>"; };
+		8F1820352986C34200EAB488 /* lights.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lights.h; path = ../../../CLionProjects/chatgpt_3d_game/lights.h; sourceTree = "<group>"; };
+		8F1820362986C34200EAB488 /* gui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gui.h; path = ../../../CLionProjects/chatgpt_3d_game/gui.h; sourceTree = "<group>"; };
+		8F1820372986C34200EAB488 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; name = res; path = ../../../CLionProjects/chatgpt_3d_game/res; sourceTree = "<group>"; };
+		8F1820382986C34200EAB488 /* input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = input.h; path = ../../../CLionProjects/chatgpt_3d_game/input.h; sourceTree = "<group>"; };
+		8F1820392986C34200EAB488 /* collision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = collision.h; path = ../../../CLionProjects/chatgpt_3d_game/collision.h; sourceTree = "<group>"; };
+		8F18203A2986C34200EAB488 /* line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = line.h; path = ../../../CLionProjects/chatgpt_3d_game/line.h; sourceTree = "<group>"; };
+		8F18203B2986C34200EAB488 /* texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = texture.h; path = ../../../CLionProjects/chatgpt_3d_game/texture.h; sourceTree = "<group>"; };
+		8F18203C2986C34200EAB488 /* imgui */ = {isa = PBXFileReference; lastKnownFileType = folder; name = imgui; path = ../../../CLionProjects/chatgpt_3d_game/imgui; sourceTree = "<group>"; };
+		8F18203D2986C34200EAB488 /* transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = transform.h; path = ../../../CLionProjects/chatgpt_3d_game/transform.h; sourceTree = "<group>"; };
+		8F18203E2986C34300EAB488 /* random.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = random.cpp; path = ../../../CLionProjects/chatgpt_3d_game/random.cpp; sourceTree = "<group>"; };
+		8F18203F2986C34300EAB488 /* entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = entity.h; path = ../../../CLionProjects/chatgpt_3d_game/entity.h; sourceTree = "<group>"; };
+		8F1820402986C34300EAB488 /* terrain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = terrain.cpp; path = ../../../CLionProjects/chatgpt_3d_game/terrain.cpp; sourceTree = "<group>"; };
+		8F1C6CB72A25B5E0006522CD /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2_mixer.framework; sourceTree = "<group>"; };
+		8F1C6CB82A25B5E0006522CD /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2.framework; sourceTree = "<group>"; };
+		8F1C6CB92A25B5E0006522CD /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2_image.framework; sourceTree = "<group>"; };
+		8F1C6CBA2A25B5E1006522CD /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2_ttf.framework; sourceTree = "<group>"; };
+		8F6FA3A32986D106005C7319 /* imgui.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = imgui.cpp; path = ../../CLionProjects/chatgpt_3d_game/imgui/imgui.cpp; sourceTree = "<group>"; };
+		8F6FA3A42986D106005C7319 /* imgui_widgets.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_widgets.cpp; path = ../../CLionProjects/chatgpt_3d_game/imgui/imgui_widgets.cpp; sourceTree = "<group>"; };
+		8F6FA3A52986D106005C7319 /* imgui_demo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_demo.cpp; path = ../../CLionProjects/chatgpt_3d_game/imgui/imgui_demo.cpp; sourceTree = "<group>"; };
+		8F6FA3A62986D106005C7319 /* imgui_impl_sdl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_impl_sdl.cpp; path = ../../CLionProjects/chatgpt_3d_game/imgui/backends/imgui_impl_sdl.cpp; sourceTree = "<group>"; };
+		8F6FA3A72986D106005C7319 /* imgui_impl_opengl3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_impl_opengl3.cpp; path = ../../CLionProjects/chatgpt_3d_game/imgui/backends/imgui_impl_opengl3.cpp; sourceTree = "<group>"; };
+		8F6FA3A82986D106005C7319 /* imgui_draw.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_draw.cpp; path = ../../CLionProjects/chatgpt_3d_game/imgui/imgui_draw.cpp; sourceTree = "<group>"; };
+		8F6FA3A92986D106005C7319 /* imgui_tables.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_tables.cpp; path = ../../CLionProjects/chatgpt_3d_game/imgui/imgui_tables.cpp; sourceTree = "<group>"; };
+		8F6FA3AA2986D106005C7319 /* imgui_impl_sdlrenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_impl_sdlrenderer.cpp; path = ../../CLionProjects/chatgpt_3d_game/imgui/backends/imgui_impl_sdlrenderer.cpp; sourceTree = "<group>"; };
+		8F6FA3B32986D13B005C7319 /* glad.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = glad.c; path = ../../CLionProjects/chatgpt_3d_game/include/glad.c; sourceTree = "<group>"; };
+		8F6FA3BC2986D2B9005C7319 /* libassimp.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libassimp.5.dylib; sourceTree = "<group>"; };
+		8F6FA3BD2986D2B9005C7319 /* libfreetype.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfreetype.6.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F181E6A2986B5B500EAB488 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F1C6CBB2A25B5E1006522CD /* SDL2_mixer.framework in Frameworks */,
+				8F6FA3C42986D2BA005C7319 /* libfreetype.6.dylib in Frameworks */,
+				8F6FA3C22986D2BA005C7319 /* libassimp.5.dylib in Frameworks */,
+				8F1C6CBD2A25B5E1006522CD /* SDL2.framework in Frameworks */,
+				8F1C6CC12A25B5E1006522CD /* SDL2_ttf.framework in Frameworks */,
+				8F1C6CBF2A25B5E1006522CD /* SDL2_image.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F181E642986B5B500EAB488 = {
+			isa = PBXGroup;
+			children = (
+				8F6FA3B32986D13B005C7319 /* glad.c */,
+				8F6FA3A72986D106005C7319 /* imgui_impl_opengl3.cpp */,
+				8F6FA3A62986D106005C7319 /* imgui_impl_sdl.cpp */,
+				8F6FA3AA2986D106005C7319 /* imgui_impl_sdlrenderer.cpp */,
+				8F6FA3A52986D106005C7319 /* imgui_demo.cpp */,
+				8F6FA3A82986D106005C7319 /* imgui_draw.cpp */,
+				8F6FA3A92986D106005C7319 /* imgui_tables.cpp */,
+				8F6FA3A42986D106005C7319 /* imgui_widgets.cpp */,
+				8F6FA3A32986D106005C7319 /* imgui.cpp */,
+				8F181E6F2986B5B500EAB488 /* dream-wars-macos */,
+				8F181E6E2986B5B500EAB488 /* Products */,
+				8F6FA3BB2986D2B8005C7319 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8F181E6E2986B5B500EAB488 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F181E6D2986B5B500EAB488 /* dream-wars-macos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F181E6F2986B5B500EAB488 /* dream-wars-macos */ = {
+			isa = PBXGroup;
+			children = (
+				8F1820092986C34100EAB488 /* ai.h */,
+				8F18201A2986C34100EAB488 /* audio.cpp */,
+				8F1820212986C34100EAB488 /* audio.h */,
+				8F18202C2986C34200EAB488 /* camera.cpp */,
+				8F1820132986C34100EAB488 /* camera.h */,
+				8F1820202986C34100EAB488 /* collision.cpp */,
+				8F1820392986C34200EAB488 /* collision.h */,
+				8F1820322986C34200EAB488 /* common.cpp */,
+				8F1820142986C34100EAB488 /* common.h */,
+				8F18200B2986C34100EAB488 /* component.cpp */,
+				8F18202D2986C34200EAB488 /* component.h */,
+				8F18201C2986C34100EAB488 /* coroutine.cpp */,
+				8F1820332986C34200EAB488 /* coroutine.h */,
+				8F1820192986C34100EAB488 /* easing.h */,
+				8F1820172986C34100EAB488 /* entity.cpp */,
+				8F18203F2986C34300EAB488 /* entity.h */,
+				8F18202F2986C34200EAB488 /* game_state.cpp */,
+				8F1820162986C34100EAB488 /* game_state.h */,
+				8F1820272986C34200EAB488 /* game.cpp */,
+				8F1820232986C34100EAB488 /* game.h */,
+				8F18201F2986C34100EAB488 /* gui.cpp */,
+				8F1820362986C34200EAB488 /* gui.h */,
+				8F1820152986C34100EAB488 /* health.h */,
+				8F18203C2986C34200EAB488 /* imgui */,
+				8F1820382986C34200EAB488 /* input.h */,
+				8F1820352986C34200EAB488 /* lights.h */,
+				8F1820222986C34100EAB488 /* line.cpp */,
+				8F18203A2986C34200EAB488 /* line.h */,
+				8F18201B2986C34100EAB488 /* load.cpp */,
+				8F18202E2986C34200EAB488 /* load.h */,
+				8F1820252986C34200EAB488 /* main.cpp */,
+				8F18200C2986C34100EAB488 /* material.cpp */,
+				8F18202A2986C34200EAB488 /* material.h */,
+				8F1820282986C34200EAB488 /* mesh.cpp */,
+				8F1820102986C34100EAB488 /* mesh.h */,
+				8F18202B2986C34200EAB488 /* particle.cpp */,
+				8F1820112986C34100EAB488 /* particle.h */,
+				8F1820182986C34100EAB488 /* perlin.cpp */,
+				8F1820292986C34200EAB488 /* perlin.h */,
+				8F18200F2986C34100EAB488 /* player.h */,
+				8F18203E2986C34300EAB488 /* random.cpp */,
+				8F18201D2986C34100EAB488 /* random.h */,
+				8F1820372986C34200EAB488 /* res */,
+				8F1820302986C34200EAB488 /* screen.cpp */,
+				8F18200D2986C34100EAB488 /* screen.h */,
+				8F18200E2986C34100EAB488 /* system.cpp */,
+				8F1820242986C34200EAB488 /* system.h */,
+				8F1820402986C34300EAB488 /* terrain.cpp */,
+				8F18200A2986C34100EAB488 /* terrain.h */,
+				8F1820312986C34200EAB488 /* text.cpp */,
+				8F1820082986C34100EAB488 /* text.h */,
+				8F1820122986C34100EAB488 /* texture.cpp */,
+				8F18203B2986C34200EAB488 /* texture.h */,
+				8F1820262986C34200EAB488 /* transform.cpp */,
+				8F18203D2986C34200EAB488 /* transform.h */,
+				8F18201E2986C34100EAB488 /* util.cpp */,
+				8F1820342986C34200EAB488 /* util.h */,
+				8F181E762986B5B600EAB488 /* Assets.xcassets */,
+				8F181E7D2986B5B600EAB488 /* dream_wars_macos.entitlements */,
+			);
+			path = "dream-wars-macos";
+			sourceTree = "<group>";
+		};
+		8F6FA3BB2986D2B8005C7319 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F1C6CB92A25B5E0006522CD /* SDL2_image.framework */,
+				8F1C6CB72A25B5E0006522CD /* SDL2_mixer.framework */,
+				8F1C6CBA2A25B5E1006522CD /* SDL2_ttf.framework */,
+				8F1C6CB82A25B5E0006522CD /* SDL2.framework */,
+				8F6FA3BC2986D2B9005C7319 /* libassimp.5.dylib */,
+				8F6FA3BD2986D2B9005C7319 /* libfreetype.6.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F181E6C2986B5B500EAB488 /* dream-wars-macos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F181E802986B5B600EAB488 /* Build configuration list for PBXNativeTarget "dream-wars-macos" */;
+			buildPhases = (
+				8F181E692986B5B500EAB488 /* Sources */,
+				8F181E6A2986B5B500EAB488 /* Frameworks */,
+				8F181E6B2986B5B500EAB488 /* Resources */,
+				8F1820682986C59E00EAB488 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "dream-wars-macos";
+			productName = "dream-wars-macos";
+			productReference = 8F181E6D2986B5B500EAB488 /* dream-wars-macos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F181E652986B5B500EAB488 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					8F181E6C2986B5B500EAB488 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 8F181E682986B5B500EAB488 /* Build configuration list for PBXProject "dream-wars-macos" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F181E642986B5B500EAB488;
+			productRefGroup = 8F181E6E2986B5B500EAB488 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F181E6C2986B5B500EAB488 /* dream-wars-macos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F181E6B2986B5B500EAB488 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F181E772986B5B600EAB488 /* Assets.xcassets in Resources */,
+				8F1820582986C34300EAB488 /* res in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F181E692986B5B500EAB488 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F18205B2986C34300EAB488 /* terrain.cpp in Sources */,
+				8F1820452986C34300EAB488 /* entity.cpp in Sources */,
+				8F1820482986C34300EAB488 /* load.cpp in Sources */,
+				8F1820562986C34300EAB488 /* text.cpp in Sources */,
+				8F1820572986C34300EAB488 /* common.cpp in Sources */,
+				8F18204F2986C34300EAB488 /* transform.cpp in Sources */,
+				8F1820502986C34300EAB488 /* game.cpp in Sources */,
+				8F1820512986C34300EAB488 /* mesh.cpp in Sources */,
+				8F1820522986C34300EAB488 /* particle.cpp in Sources */,
+				8F1820492986C34300EAB488 /* coroutine.cpp in Sources */,
+				8F18204A2986C34300EAB488 /* util.cpp in Sources */,
+				8F18204E2986C34300EAB488 /* main.cpp in Sources */,
+				8F1820542986C34300EAB488 /* game_state.cpp in Sources */,
+				8F1820552986C34300EAB488 /* screen.cpp in Sources */,
+				8F18204B2986C34300EAB488 /* gui.cpp in Sources */,
+				8F1820422986C34300EAB488 /* material.cpp in Sources */,
+				8F18204C2986C34300EAB488 /* collision.cpp in Sources */,
+				8F1820442986C34300EAB488 /* texture.cpp in Sources */,
+				8F18204D2986C34300EAB488 /* line.cpp in Sources */,
+				8F1820532986C34300EAB488 /* camera.cpp in Sources */,
+				8F1820462986C34300EAB488 /* perlin.cpp in Sources */,
+				8F18205A2986C34300EAB488 /* random.cpp in Sources */,
+				8F1820472986C34300EAB488 /* audio.cpp in Sources */,
+				8F1820412986C34300EAB488 /* component.cpp in Sources */,
+				8F1820432986C34300EAB488 /* system.cpp in Sources */,
+				8F6FA3AB2986D106005C7319 /* imgui.cpp in Sources */,
+				8F6FA3B42986D13B005C7319 /* glad.c in Sources */,
+				8F6FA3AC2986D106005C7319 /* imgui_widgets.cpp in Sources */,
+				8F6FA3AD2986D106005C7319 /* imgui_demo.cpp in Sources */,
+				8F6FA3AE2986D106005C7319 /* imgui_impl_sdl.cpp in Sources */,
+				8F6FA3AF2986D106005C7319 /* imgui_impl_opengl3.cpp in Sources */,
+				8F6FA3B02986D106005C7319 /* imgui_draw.cpp in Sources */,
+				8F6FA3B12986D106005C7319 /* imgui_tables.cpp in Sources */,
+				8F6FA3B22986D106005C7319 /* imgui_impl_sdlrenderer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8F181E7E2986B5B600EAB488 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8F181E7F2986B5B600EAB488 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8F181E812986B5B600EAB488 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "dream-wars-macos/dream_wars_macos.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "/Users/johannes/CLionProjects/chatgpt_3d_game/include/**";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/opt/homebrew/opt/**",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prjoh.dream-wars-macos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		8F181E822986B5B600EAB488 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "dream-wars-macos/dream_wars_macos.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "/Users/johannes/CLionProjects/chatgpt_3d_game/include/**";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/opt/homebrew/opt/**",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prjoh.dream-wars-macos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F181E682986B5B500EAB488 /* Build configuration list for PBXProject "dream-wars-macos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F181E7E2986B5B600EAB488 /* Debug */,
+				8F181E7F2986B5B600EAB488 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F181E802986B5B600EAB488 /* Build configuration list for PBXNativeTarget "dream-wars-macos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F181E812986B5B600EAB488 /* Debug */,
+				8F181E822986B5B600EAB488 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F181E652986B5B500EAB488 /* Project object */;
+}
